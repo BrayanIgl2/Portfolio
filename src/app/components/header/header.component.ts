@@ -10,6 +10,6 @@ isScrolled = false;
   @HostListener('window:scroll', []) 
   onWindowScroll() {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
-    this.isScrolled = scrollTop > 0;
+    this.isScrolled = scrollTop > 16;
   }
 }
